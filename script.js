@@ -1,4 +1,4 @@
-var nav = document.querySelector("nav")
+function newanimations() {var nav = document.querySelector("nav")
 nav.addEventListener("mouseenter",()=>{
     let tl = gsap.timeline()
 
@@ -35,3 +35,4 @@ nav.addEventListener("mouseleave",()=>{
        duration:0.1
     })
 })
+}
