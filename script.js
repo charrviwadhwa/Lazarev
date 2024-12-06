@@ -68,3 +68,27 @@ elem.forEach(function(e){
 })}
 
 pg2animation();
+
+function pg3_video() {
+    const pg_centre = document.querySelector("#pg_centre")
+const video  =  document.querySelector("#pg3 video")
+pg_centre.addEventListener('click',function(){
+    video.play()
+    gsap.to(video,{
+        transform:"scaleX(1) scaleY(1)",
+        opacity:1,
+        borderRadius:0
+    })
+})
+
+video.addEventListener("click",function(){
+    video.pause()
+    gsap.to(video,{
+        transform:"scaleX(0.7) scaleY(0)",
+        opacity:0,
+        borderRadius:"30px"
+    })
+
+})}
+
+pg3_video()
