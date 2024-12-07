@@ -180,7 +180,7 @@ nav button svg{
 
 #pg2{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #111;
     position: relative;
     padding: 0 10.5vw;
@@ -237,7 +237,7 @@ nav button svg{
 #pg3{
 
     height:100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #111;
     position: relative;
     background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
@@ -297,24 +297,56 @@ nav button svg{
 
 #pg4{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
     position: relative;
     display: flex;
     align-items: center;
     
     justify-content: space-between;
+    overflow-y: auto;
 }
 #pg4_left{
     height: 100%;
     width: 50%;
+    /* background-color: aqua; */
     display: flex;
     align-items: flex-start;
     position: relative;
-    padding: 3vw 11vw;
+   
 }
 #pg4_left h2{
-    font-size:2.5vw;
+    /* background-color: #07A34E; */
+    font-size:3.2vw;
     color: #000;
     font-weight: 700;
+    padding: 5vw 5vw;
+    transform: translateY(25px);
+    margin-top: 1vw;
+    
+}
+
+#pg4_right{
+    height:100%;
+    width: 60%;
+    /* background-color: blueviolet; */
+    position: relative;
+    padding: 5vw 4vw;
+}
+#pg4_right h6{
+    text-transform: uppercase;
+    font-size: 1vw;
+    /* background-color: red; */
+    font-weight: 300;
+    padding: 2vw 2vw 0vw;
+    color:#A8A8A8
+   
+}
+#pg4_right p{
+    font-size: 1.6vw;
+    /* background-color: chartreuse; */
+    color: #000;
+    padding: 2vw 2.2vw;
+    font-weight: 400;
+    
 }

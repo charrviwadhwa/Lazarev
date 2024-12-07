@@ -92,3 +92,14 @@ video.addEventListener("click",function(){
 })}
 
 pg3_video()
+
+const pg4 = document.querySelector("#pg4_left")
+pg4.addEventListener("scroll",function(){
+    console.log("scroll");
+    
+    let tl =gsap.timeline()
+    tl.to("h2"),{
+        y:0,
+        stagger:0.2,
+    }
+})
