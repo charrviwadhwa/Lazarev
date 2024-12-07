@@ -82,7 +82,7 @@ nav button svg{
 
 #pg1{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #111;
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@ nav button svg{
 
 #pg2{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #111;
     position: relative;
     padding: 0 10.5vw;
@@ -237,7 +237,7 @@ nav button svg{
 #pg3{
 
     height:100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #111;
     position: relative;
     background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
@@ -297,7 +297,7 @@ nav button svg{
 
 #pg4{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
     position: relative;
     display: flex;
@@ -313,17 +313,17 @@ nav button svg{
     display: flex;
     align-items: flex-start;
     position: relative;
+    padding: 5vw 5vw;
    
 }
-#pg4_left h2{
+#pg4_left h2 span{
     /* background-color: #07A34E; */
     font-size:3.2vw;
     color: #000;
     font-weight: 700;
-    padding: 5vw 5vw;
-    transform: translateY(25px);
-    margin-top: 1vw;
-    
+    transform: translateY(20px);
+    opacity: 0;
+    display: inline-block;
 }
 
 #pg4_right{
@@ -335,7 +335,7 @@ nav button svg{
 }
 #pg4_right h6{
     text-transform: uppercase;
-    font-size: 1vw;
+    font-size: 1.2vw;
     /* background-color: red; */
     font-weight: 300;
     padding: 2vw 2vw 0vw;
@@ -349,4 +349,60 @@ nav button svg{
     padding: 2vw 2.2vw;
     font-weight: 400;
     
+}
+#pg5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    padding-bottom: 13vh;
+}
+#pg5_1{
+    height: 72vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13vh 10vw;
+    padding-bottom: 0;
+}
+#pg5_1left{
+    height: 100%;
+    width: 25%;
+    border-top: 2px solid #333;
+}
+#pg5_1left h2{
+    font-size: 2.2vw;
+    padding-top: 3.5vh;
+    font-weight: 500;
+    color: #fff;
+}
+#pg5_1left p{
+    
+    color: #fff;
+    margin-top: 5vh;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+#pg5_1right{
+    height: 100%;
+    width: 70%;
+    position: relative;
+}
+
+#pg5_1right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#pg5_1right video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity ease 0.3s;
 }
